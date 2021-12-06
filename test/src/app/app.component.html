@@ -1,0 +1,9 @@
+<div style="align-items: center;">
+<h1>{{message}}</h1>
+<h1>{{value}}</h1>
+
+<app-child (childEvent)="message=$event" [parentData]="name"></app-child>
+  
+<button (click)="greetChild()">Greet child</button>
+<button (click)="appreciateChild()">Appreciate child</button>
+</div>
